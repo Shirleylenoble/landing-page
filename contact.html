@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, initial-scaled=1.0">
+		
+		<!-- BOOTSTRAP CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styleindexSL.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Permanent+Marker&display=swap" rel="stylesheet">
+
+
+		<title>Com'SL</title>
+	</head>
+
+<body id="page_contact">
+		<!-- NAVBAR -->
+		<nav class="navbar2 navbar-expand-lg navbar-light bg-light-transparent navbar fixed-top">
+  			<a class="navbar-brand" href="#" id="logo">Com'SL</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav">
+      				<a class="nav-item nav-link active" href="#">Accueil<span class="sr-only">(current)</span></a>
+      				<a class="nav-item nav-link" href="#">À propos</a>
+      				<button type="button" class="btn btn-light">Contact</button>
+    			</div>
+  			</div>
+		</nav>
+
+	<!--FORMULAIRE-->
+		<br><br><br><br><br><br>
+
+		<div class="container" id="contact">
+			<form class="needs-validation" novalidate>
+  				<div class="form-row">
+    				<div class="col-md-6">
+      					<label for="validationCustom01">Prénom</label>
+      					<input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+      					<div class="valid-feedback">
+        					Looks good!
+      				</div>
+    			</div>
+    		<div class="col-md-4 mb-3">
+      			<label for="validationCustom02">Nom</label>
+      			<input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+      			<div class="valid-feedback">
+        			Looks good!
+      			</div>
+    		</div>
+    		<div class="col-md-4 mb-3">
+      			<label for="validationCustomUsername">Identifiant</label>
+      			<div class="input-group">
+        			<div class="input-group-prepend">
+          				<span class="input-group-text" id="inputGroupPrepend">@</span>
+        			</div>
+        			<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        			<div class="invalid-feedback">
+          				Veuillez choisir un identifiant.
+        			</div>
+      			</div>
+    		</div>
+  		</div>
+  		<div class="form-row">
+    		<div class="col-md-6 mb-3">
+      			<label for="validationCustom03">Ville</label>
+      			<input type="text" class="form-control" id="validationCustom03" required>
+      			<div class="invalid-feedback">
+        			Veuillez entrer une ville existante
+      			</div>
+    		</div>
+    		<div class="col-md-3 mb-3">
+      			<label for="validationCustom04">Région</label>
+      			<select class="custom-select" id="validationCustom04" required>
+        			<option selected disabled value="">Choisir</option>
+        			<option>...</option>
+      			</select>
+      			<div class="invalid-feedback">
+        			Veuillez entrer une région existante
+      			</div>
+    		</div>
+    		<div class="col-md-3 mb-3">
+      			<label for="validationCustom05">Code Postal</label>
+     	 		<input type="text" class="form-control" id="validationCustom05" required>
+      			<div class="invalid-feedback">
+        			Veuillez entrer un code postal valide
+      			</div>
+    		</div>
+  		</div>
+  		
+  		<div class="form-group">
+    		<div class="form-check">
+      			<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      			<label class="form-check-label" for="invalidCheck">
+       				J'accepte que mes données personnelles soient utilisées à des fins professionnelles
+      			</label>
+      			<div class="invalid-feedback">
+        			Vous devez accepter les conditions pour valider
+      			</div>
+    		</div>
+  		</div>
+
+  		<button class="btn btn-primary" type="submit">J'ENVOIE</button>
+  		<form class="form-inline mt-4">
+		</form>
+		</div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+</body>
+
+</html>

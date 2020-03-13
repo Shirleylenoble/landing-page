@@ -1,0 +1,43 @@
+body {
+	background-color: #00005f;
+}
+
+
+
+#carouselExampleIndicators {
+	width: 100%
+}
+
+#toto {
+	background-image: url('images/Background.png');
+} 
+
+.lead {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+.display-4 {
+	color: white;
+}
+
+#page_contact {
+	background-image: url('images/pagecontact.png');
+}
+
+.navbar{
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar1{
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar2{
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 25px;
+}
